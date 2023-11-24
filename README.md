@@ -34,7 +34,7 @@ akun yang tersedia:
 2. composer Install
 3. php artisan key:generate
 4. buat database baru di phpmyadmin dengan nama smks
-5. php artisan migrate atau gunakan sql di public
+5. php artisan migrate atau gunakan sql di public (akan update lagi)
 6. gunakan username dan password yang tersedia
 7. usahakan tambahkan kendaraan dan driver terlebih dahulu
 8. buat order baru
