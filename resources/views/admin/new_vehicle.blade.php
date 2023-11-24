@@ -7,7 +7,8 @@
 @section('content')
     <div class="new-vehicle">
         <h1>Kendaraan Baru</h1>
-        <form action="">
+        <form action="/admin/new-vehicle" method="POST">
+            @csrf
             <br>
             <div class="row">
                 <div class="col-3">

@@ -7,7 +7,8 @@
 @section('content')
     <div class="new-driver">
         <h1>Driver Baru</h1>
-        <form action="">
+        <form action="/admin/new-driver" method="POST">
+            @csrf
             <br>
             <div class="row">
                 <div class="col-3"><label for="name">Nama Kendaraan</label></div>

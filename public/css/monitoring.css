@@ -6,3 +6,16 @@
     width: 15%;
     margin-bottom: 12px;
 }
+
+.monitoring .aksi{
+    display: flex;
+    padding: 0;
+    justify-content: space-evenly;
+}
+
+.manajemen .aksi button.btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

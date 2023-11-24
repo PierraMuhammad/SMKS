@@ -8,7 +8,8 @@
     <div class="new-order">
         <h1>Order Baru</h1>
         <div class="list-order">
-            <form action="">
+            <form action="/admin/new-order" method="POST">
+                @csrf
                 <br>
                 <div class="row">
                     <div class="col-3">
@@ -26,9 +27,14 @@
                     </div>
                     <div class="col-9">
                         <select name="lokasi-awal" id="lokasi-awal">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
+                            <option value="pusat">Pusat</option>
+                            <option value="cabang1">Cabang</option>
+                            <option value="Kolaka">Kolaka</option>
+                            <option value="Vale">vale</option>
+                            <option value="Morowali">Morowali</option>
+                            <option value="Maba">Maba</option>
+                            <option value="Papua">Papua</option>
+                            <option value="Gag">Gag</option>
                         </select>
                     </div>
                 </div>
@@ -39,9 +45,14 @@
                     </div>
                     <div class="col-9">
                         <select name="lokasi-akhir" id="lokasi-akhir">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
+                            <option value="pusat">Pusat</option>
+                            <option value="cabang1">Cabang</option>
+                            <option value="Kolaka">Kolaka</option>
+                            <option value="Vale">vale</option>
+                            <option value="Morowali">Morowali</option>
+                            <option value="Maba">Maba</option>
+                            <option value="Papua">Papua</option>
+                            <option value="Gag">Gag</option>
                         </select>
                     </div>
                 </div>
@@ -52,9 +63,9 @@
                     </div>
                     <div class="col-9">
                         <select name="available-vehicle" id="kendaraan-ada">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
+                            @foreach ($vehicles as $item => $vehicle)
+                                <option value="{{$vehicle->id}}">{{$vehicle->name_vehicle}}</option>
+                            @endforeach
                         </select>
                     </div>
                 </div>
@@ -65,9 +76,9 @@
                     </div>
                     <div class="col-9">
                         <select name="driver" id="driver">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
+                            @foreach ($drivers as $item => $driver)
+                                <option value="{{$driver->id}}">{{$driver->name_driver}}</option>
+                            @endforeach
                         </select>
                     </div>
                 </div>
@@ -78,9 +89,14 @@
                     </div>
                     <div class="col-9">
                         <select name="p1" id="p1">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
+                            <option value="pusat">Pusat</option>
+                            <option value="cabang1">Cabang</option>
+                            <option value="Kolaka">Kolaka</option>
+                            <option value="Vale">vale</option>
+                            <option value="Morowali">Morowali</option>
+                            <option value="Maba">Maba</option>
+                            <option value="Papua">Papua</option>
+                            <option value="Gag">Gag</option>
                         </select>
                     </div>
                 </div>
@@ -91,9 +107,14 @@
                     </div>
                     <div class="col-9">
                         <select name="p2" id="p2">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
+                            <option value="pusat">Pusat</option>
+                            <option value="cabang1">Cabang</option>
+                            <option value="Kolaka">Kolaka</option>
+                            <option value="Vale">vale</option>
+                            <option value="Morowali">Morowali</option>
+                            <option value="Maba">Maba</option>
+                            <option value="Papua">Papua</option>
+                            <option value="Gag">Gag</option>
                         </select>
                     </div>
                 </div>
@@ -101,7 +122,6 @@
                 <br>
                 <div class="btn-box">
                     <button type="submit" class="btn btn-green">Submit</button>
-                    <a href="/admin/home"><button class="btn btn-red">Cancel</button></a>
                 </div>
             </form>
         </div>

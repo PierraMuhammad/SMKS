@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('origin');
             $table->string('tlp');
             $table->string('email');
+            $table->string('status');
             $table->timestamps();
         });
     }

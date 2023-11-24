@@ -21,7 +21,29 @@
                 <td>Status</td>
             </thead>
             <tbody>
-                
+                @foreach ($requests as $item => $request)
+                    <tr>
+                        <td>{{$item+1}}</td>
+                        <td>{{$request->name_vehicle}}</td>
+                        <td>{{$request->type_vehicle}}</td>
+                        <td>{{$request->name_driver}}</td>
+                        <td>{{$request->lokasi_awal}}</td>
+                        <td>{{$request->lokasi_akhir}}</td>
+                        <td>{{$request->pihak1}}</td>
+                        <td>{{$request->pihak2}}</td>
+                        <td>
+                            @if ($request->flag_p1 == 0 && $request->flag_p2 == 0)
+                                Menunggu Verifikasi Pihak 1
+                            @endif
+                            @if ($request->flag_p1 == 1 && $request->flag_p2 == 0)
+                                Menunggu Verifikasi Pihak 2
+                            @endif
+                            @if ($request->flag_p1 == 1 && $request->flag_p2 == 1)
+                                Kendaraan sedang menuju ke tujuan
+                            @endif
+                        </td>
+                    </tr>
+                @endforeach
             </tbody>
         </table>
     </div>
