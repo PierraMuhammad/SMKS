@@ -1,0 +1,20 @@
+.manajemen h1:nth-child(1){
+    margin-bottom: 12px;
+}
+
+.manajemen .btn svg{
+    color: #fff;
+}
+
+.manajemen .aksi{
+    display: flex;
+    padding: 0;
+    justify-content: space-evenly;
+}
+
+.manajemen .btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

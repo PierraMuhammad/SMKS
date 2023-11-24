@@ -1,0 +1,28 @@
+.navbar{
+    background: #102E61;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 12px;
+}
+
+.navbar .menu-toggle{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+}
+
+.navbar .menu-toggle span{
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+.navbar svg{
+    color: #fff;
+}

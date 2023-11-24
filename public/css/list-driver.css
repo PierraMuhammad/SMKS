@@ -1,0 +1,8 @@
+.list-driver h1:nth-child(1){
+    margin-bottom: 12px;
+}
+
+.list-driver button.btn-ekspor{
+    width: 15%;
+    margin-bottom: 12px;
+}

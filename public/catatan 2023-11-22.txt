@@ -1,0 +1,41 @@
+terdapat 8 daerah (8 akun + admin): 
+1 pusat, 
+1 cabang, 
+6 tambang
+
+perusahaan memiliki banyak kendaraan:
+- jenis:
+  + angkutan orang
+  + angkutan barang
+- kepemilikan:
+  + milik perusahaan
+  + sewaan
+
+isi monitoring kendaraan:
+- konsumsi BBM
+- jadwal service
+- riwayat pemakaian
+
+fitur pemesanan:
+- 2 user (admin dan pihak yang menyetujui)
+- admin dapat menginput pemesanan kendaraan
+dan menentukan driver serta pihak yang
+menyetujui pemesanan
+- pesertujuan dilakukan berjenjang 
+minmal 2 level
+
+fitur lain:
+- terdapat dashboard grafik pemakaian kendaraan
+- laporan pemesanan dapat di export ke excel
+
+status akan dibuat 6:
+- order sudah dibuat
+- order sudah disetujui pihak 1
+- order sudah disetujui pihak 2
+- order berangkat
+- order sampai
+- order selesai
+
+riwayat adalah status 'order selesai'
+
+

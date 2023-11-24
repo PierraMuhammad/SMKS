@@ -1,0 +1,35 @@
+.sidebar{
+    width: 15%;
+    height: 93.3vh;
+    background: #33CDB2;
+    padding: 0 12px;
+    padding-top: 25px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar .under{
+    height: 150px;
+}
+
+.sidebar .home, .sidebar .monitoring{
+    margin-bottom: 16px;
+}
+
+.sidebar a{
+    display: block;
+    color: #fff;
+    margin-bottom: 9px;
+    margin-top: 9px;
+    font-weight: 300;
+}
+
+.sidebar a:hover{
+    background-color: #26A38D;
+}
+
+.sidebar a#logout:hover{
+    background-color: #A32626;
+}

@@ -1,0 +1,20 @@
+color pallate:
+
+dominan: putih
+primary: #102e61
+secondary: #33cdb2
+
+text-primary: primary
+text-secondary: putih
+text-third: secondary
+
+data daerah mining:
+- Tambang nikel Kolaka (Sulawesi Tenggara)
+- Tambang nikel Vale (Sulawesi Selatan)
+- Tambang nikel Morowali (Sulawesi Tengah)
+- Tambang nikel Maba (Maluku Utara)
+- Tambang nikel di Papua
+- Tambang nikel Pulau Gag (Papua Barat)
+
+ubah:
+- belum nambahin lokasi awal dan lokasi tujuan

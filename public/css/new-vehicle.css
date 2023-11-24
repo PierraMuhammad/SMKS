@@ -1,0 +1,20 @@
+.new-vehicle label{
+    font-size: 24px;
+}
+
+.new-vehicle .col-9{
+    display: flex;
+    align-items: center;
+}
+
+.new-vehicle .col-9 select, .new-vehicle .col-9 input{
+    height: 30px;
+    width: 50%;
+    border-radius: 4px;
+    border: 1px solid #BAB9B9;
+    background: rgba(217, 217, 217, 0.00);
+}
+
+.new-vehicle button{
+    width: 15%;
+}
