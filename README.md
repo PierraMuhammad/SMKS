@@ -18,6 +18,17 @@ database: myphpadmin (versi: 5.2.1)
 php versi: 8.2.4
 framework: laravel 10
 
+akun yang tersedia:
+1. username: adminSMKS@gmail.com<br>password: 12345
+2. username: pusat.SMKS@gmail.com<br>password: 12345
+3. username: cabang1.SMKS@gmail.com<br>password: 12345
+4. username: kolaka.SMKS@gmail.com<br>password: 12345
+5. username: vale.SMKS@gmail.com<br>password: 12345
+6. username: morowali.SMKS@gmail.com<br>password: 12345
+7. username: maba.SMKS@gmail.com<br>password: 12345
+8. username: papua.SMKS@gmail.com<br>password: 12345
+9. username: gag.SMKS@gmail.com<br>password: 12345
+
 ##panduan penggunaan website
 1. Clone repo ini
 2. composer Install
