@@ -35,7 +35,7 @@ class AdminController extends Controller
         $requests = DB::table('requests')
                     ->join('vehicles','vehicles.id','=','requests.vehicle_id')
                     ->join('drivers', 'drivers.id','=','requests.driver_id')
-                    ->select('vehicles.name_vehicle', 'vehicles.type_vehicle', 
+                    ->select('requests.id','vehicles.name_vehicle', 'vehicles.type_vehicle', 
                     'drivers.name_driver', 'requests.lokasi_awal', 
                     'requests.lokasi_akhir', 'requests.pihak1', 
                     'requests.pihak2', 'requests.flag_p1','requests.flag_p2')

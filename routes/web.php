@@ -67,4 +67,10 @@ Route::middleware(['auth'])->prefix('user')->group(function(){
     Route::get('/monitoring', [UserController::class, 'userMonitoring']);
     
     Route::get('/manajemen', [UserController::class, 'userManajemen']);
+
+    Route::get('/verifikasi-order/{request_id}', [UserController::class, 'verifikasiOrder']);
+
+    Route::get('/reject-order/{request_id}', [UserController::class, 'rejectOrder']);
+
+    Route::get('/finish-order/{request_id}', [UserController::class, 'finishOrder']);
 });

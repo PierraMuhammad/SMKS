@@ -41,6 +41,9 @@
                             @if ($request->flag_p1 == 1 && $request->flag_p2 == 1)
                                 Kendaraan sedang menuju ke tujuan
                             @endif
+                            @if ($request->flag_p1 == 1 && $request->flag_p2 == 2)
+                                sudah selesai
+                            @endif
                         </td>
                     </tr>
                 @endforeach
